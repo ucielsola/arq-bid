@@ -12,6 +12,12 @@ swift run
 
 La aplicación consulta la API al iniciar, permite actualizar manualmente y vuelve a consultar cada 15 minutos.
 
+Para validar la lógica de la API sin instalar la aplicación:
+
+\`\`\`bash
+swift run ArqBidCoreChecks
+\`\`\`
+
 Para generar una aplicación instalable localmente:
 
 ```bash

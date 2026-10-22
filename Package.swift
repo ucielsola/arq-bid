@@ -7,11 +7,19 @@ let package = Package(
         .macOS(.v13)
     ],
     products: [
+        .library(name: "ArqBidCore", targets: ["ArqBidCore"]),
         .executable(name: "ArqBid", targets: ["ArqBid"])
     ],
     targets: [
+        .target(name: "ArqBidCore"),
         .executableTarget(
-            name: "ArqBid"
+            name: "ArqBid",
+            dependencies: ["ArqBidCore"]
+        ),
+        .executableTarget(
+            name: "ArqBidCoreChecks",
+            dependencies: ["ArqBidCore"],
+            path: "Tests/ArqBidCoreTests"
         )
     ]
 )
