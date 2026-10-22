@@ -36,6 +36,28 @@ struct BidPopover: View {
                 RateRow(title: "EURC / ARS", value: CurrencyFormatter.string(from: eurcARS))
             }
 
+            Divider()
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Variación · \(store.history.snapshots.count) registros")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+
+                if let usdcChange = store.usdcChange {
+                    ChangeRow(title: "USDC / ARS", change: usdcChange)
+                }
+
+                if let eurcChange = store.eurcChange {
+                    ChangeRow(title: "EURC / ARS", change: eurcChange)
+                }
+
+                if store.usdcChange == nil && store.eurcChange == nil {
+                    Text("Disponible después de la próxima actualización")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+
             if let updatedAt = store.updatedAt {
                 Text("Actualizado \(updatedAt, style: .relative)")
                     .font(.caption)

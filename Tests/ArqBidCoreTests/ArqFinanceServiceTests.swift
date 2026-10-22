@@ -5,9 +5,10 @@ import ArqBidCore
 struct ArqBidCoreChecks {
     static func main() throws {
         try decodesBothMarketsAndCalculatesEurcArs()
+        checksHistoryLimitAndChange()
         rejectsResponseWithoutExpectedMarkets()
         rejectsInvalidDatePrecision()
-        print("ArqBidCoreChecks: 3 checks passed")
+        print("ArqBidCoreChecks: 4 checks passed")
     }
 
     private static func decodesBothMarketsAndCalculatesEurcArs() throws {
@@ -40,6 +41,19 @@ struct ArqBidCoreChecks {
         } catch {
             precondition((error as? APIError) == .emptyResponse)
         }
+    }
+
+    private static func checksHistoryLimitAndChange() {
+        var history = RateHistory(maxCount: 2)
+        history.append(RateSnapshot(date: .now, usdcARS: 100, eurcARS: 200))
+        history.append(RateSnapshot(date: .now.addingTimeInterval(1), usdcARS: 110, eurcARS: 190))
+        history.append(RateSnapshot(date: .now.addingTimeInterval(2), usdcARS: 120, eurcARS: 180))
+
+        precondition(history.snapshots.count == 2)
+        precondition(history.snapshots.first?.usdcARS == 110)
+        precondition(history.change(for: .usdcARS)?.absolute == 10)
+        let percentage = history.change(for: .usdcARS)?.percentage
+        precondition(percentage.map { abs(($0 as NSDecimalNumber).doubleValue - 9.090909090909092) < 0.0000001 } == true)
     }
 
     private static func rejectsInvalidDatePrecision() {

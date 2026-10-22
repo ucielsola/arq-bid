@@ -10,7 +10,7 @@ Requiere macOS 13 o superior y Xcode instalado.
 swift run
 ```
 
-La aplicación consulta la API al iniciar, permite actualizar manualmente y vuelve a consultar cada 15 minutos.
+La aplicación consulta la API al iniciar, permite actualizar manualmente y vuelve a consultar cada 15 minutos. Conserva localmente las últimas 100 muestras y muestra la variación acumulada desde la más antigua disponible.
 
 Para validar la lógica de la API sin instalar la aplicación:
 

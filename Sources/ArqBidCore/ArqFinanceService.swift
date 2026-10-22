@@ -49,6 +49,8 @@ public struct ArqFinanceService: Sendable {
 
         // The API exposes EURC through the USDC/EURC market, so derive the
         // EURC/ARS bid from the two bid prices.
+        // The API exposes EURC through the USDC/EURC market, so derive the
+        // EURC/ARS bid from the two bid prices.
         return ArqRates(
             usdcARS: usdcARS,
             eurcARS: usdcARS / usdcEURC,
