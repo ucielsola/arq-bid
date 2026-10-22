@@ -18,6 +18,14 @@ Para validar la lógica de la API sin instalar la aplicación:
 swift run ArqBidCoreChecks
 \`\`\`
 
+El código del widget está en \`Sources/ArqBidWidget\`. El target compila con:
+
+\`\`\`bash
+swift build --product ArqBidWidget
+\`\`\`
+
+Para instalarlo en macOS, agregá un target **Widget Extension** en Xcode usando esos archivos, \`Resources/WidgetInfo.plist\` como \`Info.plist\` y la dependencia \`ArqBidCore\`. macOS admite las familias \`systemSmall\` y \`systemMedium\`; \`accessoryRectangular\` no está disponible para widgets de macOS.
+
 Para generar una aplicación instalable localmente:
 
 ```bash

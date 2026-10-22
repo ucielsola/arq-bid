@@ -8,13 +8,19 @@ let package = Package(
     ],
     products: [
         .library(name: "ArqBidCore", targets: ["ArqBidCore"]),
-        .executable(name: "ArqBid", targets: ["ArqBid"])
+        .executable(name: "ArqBid", targets: ["ArqBid"]),
+        .executable(name: "ArqBidWidget", targets: ["ArqBidWidget"])
     ],
     targets: [
         .target(name: "ArqBidCore"),
         .executableTarget(
             name: "ArqBid",
             dependencies: ["ArqBidCore"]
+        ),
+        .executableTarget(
+            name: "ArqBidWidget",
+            dependencies: ["ArqBidCore"],
+            path: "Sources/ArqBidWidget"
         ),
         .executableTarget(
             name: "ArqBidCoreChecks",
