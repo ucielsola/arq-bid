@@ -41,7 +41,7 @@ struct BidPopover: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Variación · \(store.history.snapshots.count) registros")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.72))
 
                 if let usdcChange = store.usdcChange {
                     ChangeRow(title: "USDC / ARS", change: usdcChange)
@@ -54,9 +54,11 @@ struct BidPopover: View {
                 if store.usdcChange == nil && store.eurcChange == nil {
                     Text("Disponible después de la próxima actualización")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.white.opacity(0.72))
                 }
             }
+            .padding(12)
+            .background(.black, in: .rect(cornerRadius: 12))
 
             if let updatedAt = store.updatedAt {
                 Text("Actualizado \(updatedAt, style: .relative)")

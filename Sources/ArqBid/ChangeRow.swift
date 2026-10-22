@@ -9,7 +9,7 @@ struct ChangeRow: View {
         HStack {
             Text(title)
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.white.opacity(0.78))
             Spacer()
             Image(systemName: iconName)
             Text("\(CurrencyFormatter.string(from: change.absolute)) (\(CurrencyFormatter.percentString(from: change.percentage)))")
