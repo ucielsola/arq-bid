@@ -8,6 +8,10 @@
     <string>com.uciel.arqbid.widget</string>
     <key>CFBundlePackageType</key>
     <string>XPC!</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
     <key>NSExtension</key>
     <dict>
         <key>NSExtensionPointIdentifier</key>

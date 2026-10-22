@@ -1,0 +1,68 @@
+name: ArqBid
+options:
+  bundleIdPrefix: com.uciel
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: NO
+
+targets:
+  ArqBidCore:
+    type: framework
+    platform: macOS
+    sources:
+      - path: Sources/ArqBidCore
+    settings:
+      base:
+        PRODUCT_MODULE_NAME: ArqBidCore
+        DEFINES_MODULE: YES
+        INFOPLIST_FILE: Resources/CoreInfo.plist
+
+  ArqBid:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/ArqBid
+    dependencies:
+      - target: ArqBidCore
+        embed: true
+      - target: ArqBidWidget
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.uciel.arqbid
+        INFOPLIST_FILE: Resources/Info.plist
+        LSUIElement: YES
+        PRODUCT_NAME: ArqBid
+
+  ArqBidWidget:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Sources/ArqBidWidget
+    dependencies:
+      - target: ArqBidCore
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.uciel.arqbid.widget
+        INFOPLIST_FILE: Resources/WidgetInfo.plist
+        PRODUCT_NAME: ArqBidWidget
+        APPLICATION_EXTENSION_API_ONLY: YES
+
+schemes:
+  ArqBid:
+    build:
+      targets:
+        ArqBid: all
+    run:
+      config: Debug

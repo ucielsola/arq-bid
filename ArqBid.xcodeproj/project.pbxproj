@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BFA4DA3174D76D8EDFA826 /* ArqBidCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		017BCFFF426F4605781CA250 /* ArqBidWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B4B547F39E3B5C82F894E /* ArqBidWidget.swift */; };
+		1C46EEF0027BAE127D79D517 /* ArqBidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1D2ADFCB9FB843BE8B0D3 /* ArqBidApp.swift */; };
+		3310C1DD331DCBAFD8D08B60 /* WidgetPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A016A39705DAEA694F7031E /* WidgetPreviews.swift */; };
+		382AF0AB244048A43AB08973 /* ArqRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C6E2EF45901999AC59ECD /* ArqRates.swift */; };
+		3D61ED6AC671FC90C7BD44FE /* ArqBidTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5404A2A3C1ABB9AFEDDC80 /* ArqBidTimelineProvider.swift */; };
+		3E461F10CB54505088919EC3 /* ArqFinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD4319E2E456794C00D0A7 /* ArqFinanceService.swift */; };
+		5A1B8BEE48A28F9D687A5194 /* ArqTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22B08E0FA77C2A8810E336 /* ArqTicker.swift */; };
+		5B335E5AF39CFB5AE78E49AA /* ArqBidWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6565E2642D1F96AD1DE0E /* ArqBidWidgetEntry.swift */; };
+		698BFF98834ABC602A96351E /* SmallQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D7B6DC2E40F8A86C7242C /* SmallQuoteView.swift */; };
+		7346A878F8437394A793D03B /* WidgetCardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D29EF52FBEB065A2D3FC31 /* WidgetCardBackground.swift */; };
+		8534515944E152A5C4109B92 /* WidgetChangeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09DEEE2A09EDD8072254C8 /* WidgetChangeRow.swift */; };
+		8ABB02FE409A0BA990C0E18D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B11DC30F688810B881BD8 /* APIError.swift */; };
+		8F62965D17A52B224C79B8F8 /* ArqBidCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB35E07E1025381302A7B52 /* TrendPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CF61871040CE073BE9CE1 /* TrendPanel.swift */; };
+		A706EA11054220D96AA590A0 /* ArqBidCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */; };
+		AD7C2BA59C270529916B8038 /* BidStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4D3B7EBF3B557D6551DF9 /* BidStore.swift */; };
+		AF16A6BF182032C5CA2D7991 /* RateHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE96FF9C089BF76140F5480 /* RateHistoryStore.swift */; };
+		B17F717D69168A7A5E9A4B48 /* RateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B1C0213F48C79CADC2000 /* RateRow.swift */; };
+		B1D909CB02411038CC0DB418 /* ChangeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA22BAA5B3870EF9B60A58 /* ChangeRow.swift */; };
+		B43A032A14791BD068ED4546 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810FD04DEC9701A1A5DF6C7 /* CurrencyFormatter.swift */; };
+		BBF9A884957E56B3CC4A6238 /* RateSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757597C3DCEDA42593FEFF76 /* RateSnapshot.swift */; };
+		C705EF6A1982F646FF6A029C /* ArqBidWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF146F55C78524AF8B697AAD /* ArqBidWidgetView.swift */; };
+		CA65D95CC8F26DEA1686866A /* MediumQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519981254817ECD4714348E7 /* MediumQuoteView.swift */; };
+		D14F03620E30ABD6E284532B /* ArqBidCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */; };
+		D8D3C4D9CD1FEA20103C1E40 /* WidgetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A1D7EEB125B75503487BB7 /* WidgetHeader.swift */; };
+		DA1A33EFB5920E469A4A9357 /* ClearWindowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70649BB7CF40A66A289FC766 /* ClearWindowBackground.swift */; };
+		E5F67E29229F0F57BC4A0134 /* ArqBidWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 36DF40DA70BDB9438FB990DE /* ArqBidWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA62A3C33CD492DCD23CDD7D /* BidPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC71EA41F352276B2029322 /* BidPopover.swift */; };
+		F2026968CE27B2390C882FFC /* RateHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74772FF940764094A81A3139 /* RateHistory.swift */; };
+		FD4B03E5DD7BC2196E2D206B /* WidgetColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DF86BEDC2675E9609DEB4 /* WidgetColors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D7F1F2021E1DD9ED4F74086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06AFE2E30EB3EE7E136172A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED78516D661DF5E940525A1;
+			remoteInfo = ArqBidCore;
+		};
+		DA41F04367C3DB95DE0B265D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06AFE2E30EB3EE7E136172A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED78516D661DF5E940525A1;
+			remoteInfo = ArqBidCore;
+		};
+		EE5B110E015C55F945D3594D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06AFE2E30EB3EE7E136172A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EB321C65B0794581EC3E264;
+			remoteInfo = ArqBidWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33CA19A4329F86EF733837F3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00BFA4DA3174D76D8EDFA826 /* ArqBidCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53941BC8E1FCFD22D5470463 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F62965D17A52B224C79B8F8 /* ArqBidCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D71C08CF6536724B1243954A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E5F67E29229F0F57BC4A0134 /* ArqBidWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArqBidCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A016A39705DAEA694F7031E /* WidgetPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPreviews.swift; sourceTree = "<group>"; };
+		0BC71EA41F352276B2029322 /* BidPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidPopover.swift; sourceTree = "<group>"; };
+		1DE96FF9C089BF76140F5480 /* RateHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoryStore.swift; sourceTree = "<group>"; };
+		2B5404A2A3C1ABB9AFEDDC80 /* ArqBidTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqBidTimelineProvider.swift; sourceTree = "<group>"; };
+		36DF40DA70BDB9438FB990DE /* ArqBidWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArqBidWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F09DEEE2A09EDD8072254C8 /* WidgetChangeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetChangeRow.swift; sourceTree = "<group>"; };
+		519981254817ECD4714348E7 /* MediumQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumQuoteView.swift; sourceTree = "<group>"; };
+		523C6E2EF45901999AC59ECD /* ArqRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqRates.swift; sourceTree = "<group>"; };
+		55D6565E2642D1F96AD1DE0E /* ArqBidWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqBidWidgetEntry.swift; sourceTree = "<group>"; };
+		5D22B08E0FA77C2A8810E336 /* ArqTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqTicker.swift; sourceTree = "<group>"; };
+		5DE1D2ADFCB9FB843BE8B0D3 /* ArqBidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqBidApp.swift; sourceTree = "<group>"; };
+		680B1C0213F48C79CADC2000 /* RateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRow.swift; sourceTree = "<group>"; };
+		6FAA22BAA5B3870EF9B60A58 /* ChangeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRow.swift; sourceTree = "<group>"; };
+		70649BB7CF40A66A289FC766 /* ClearWindowBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearWindowBackground.swift; sourceTree = "<group>"; };
+		74772FF940764094A81A3139 /* RateHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistory.swift; sourceTree = "<group>"; };
+		757597C3DCEDA42593FEFF76 /* RateSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateSnapshot.swift; sourceTree = "<group>"; };
+		772D7B6DC2E40F8A86C7242C /* SmallQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallQuoteView.swift; sourceTree = "<group>"; };
+		7810FD04DEC9701A1A5DF6C7 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		8F9CF61871040CE073BE9CE1 /* TrendPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendPanel.swift; sourceTree = "<group>"; };
+		95FD4319E2E456794C00D0A7 /* ArqFinanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqFinanceService.swift; sourceTree = "<group>"; };
+		AF146F55C78524AF8B697AAD /* ArqBidWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqBidWidgetView.swift; sourceTree = "<group>"; };
+		B1A1D7EEB125B75503487BB7 /* WidgetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetHeader.swift; sourceTree = "<group>"; };
+		B2D29EF52FBEB065A2D3FC31 /* WidgetCardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCardBackground.swift; sourceTree = "<group>"; };
+		B3B4D3B7EBF3B557D6551DF9 /* BidStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidStore.swift; sourceTree = "<group>"; };
+		CF2DF86BEDC2675E9609DEB4 /* WidgetColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetColors.swift; sourceTree = "<group>"; };
+		CFCC7445C901F2B9929AF793 /* ArqBid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArqBid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6B11DC30F688810B881BD8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E20B4B547F39E3B5C82F894E /* ArqBidWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqBidWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36DC7D567CDB346C8452A9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A706EA11054220D96AA590A0 /* ArqBidCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578E9EBB00A402D81811CE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14F03620E30ABD6E284532B /* ArqBidCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129570CAF4EC19EE8AA62E74 /* ArqBidCore */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B11DC30F688810B881BD8 /* APIError.swift */,
+				95FD4319E2E456794C00D0A7 /* ArqFinanceService.swift */,
+				523C6E2EF45901999AC59ECD /* ArqRates.swift */,
+				5D22B08E0FA77C2A8810E336 /* ArqTicker.swift */,
+				7810FD04DEC9701A1A5DF6C7 /* CurrencyFormatter.swift */,
+				74772FF940764094A81A3139 /* RateHistory.swift */,
+				1DE96FF9C089BF76140F5480 /* RateHistoryStore.swift */,
+				757597C3DCEDA42593FEFF76 /* RateSnapshot.swift */,
+			);
+			path = ArqBidCore;
+			sourceTree = "<group>";
+		};
+		38B498A9CC45B57281ECEA3E /* ArqBid */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1D2ADFCB9FB843BE8B0D3 /* ArqBidApp.swift */,
+				0BC71EA41F352276B2029322 /* BidPopover.swift */,
+				B3B4D3B7EBF3B557D6551DF9 /* BidStore.swift */,
+				6FAA22BAA5B3870EF9B60A58 /* ChangeRow.swift */,
+				70649BB7CF40A66A289FC766 /* ClearWindowBackground.swift */,
+				680B1C0213F48C79CADC2000 /* RateRow.swift */,
+			);
+			path = ArqBid;
+			sourceTree = "<group>";
+		};
+		56C42592790D4EAB05EB279B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFCC7445C901F2B9929AF793 /* ArqBid.app */,
+				00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */,
+				36DF40DA70BDB9438FB990DE /* ArqBidWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D8B1D82FC0B3717E74E82CE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				38B498A9CC45B57281ECEA3E /* ArqBid */,
+				129570CAF4EC19EE8AA62E74 /* ArqBidCore */,
+				B75938B2F665B02091A0C84B /* ArqBidWidget */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B15C69F7ACEF64910F0C18C9 = {
+			isa = PBXGroup;
+			children = (
+				9D8B1D82FC0B3717E74E82CE /* Sources */,
+				56C42592790D4EAB05EB279B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B75938B2F665B02091A0C84B /* ArqBidWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2B5404A2A3C1ABB9AFEDDC80 /* ArqBidTimelineProvider.swift */,
+				E20B4B547F39E3B5C82F894E /* ArqBidWidget.swift */,
+				55D6565E2642D1F96AD1DE0E /* ArqBidWidgetEntry.swift */,
+				AF146F55C78524AF8B697AAD /* ArqBidWidgetView.swift */,
+				519981254817ECD4714348E7 /* MediumQuoteView.swift */,
+				772D7B6DC2E40F8A86C7242C /* SmallQuoteView.swift */,
+				8F9CF61871040CE073BE9CE1 /* TrendPanel.swift */,
+				B2D29EF52FBEB065A2D3FC31 /* WidgetCardBackground.swift */,
+				3F09DEEE2A09EDD8072254C8 /* WidgetChangeRow.swift */,
+				CF2DF86BEDC2675E9609DEB4 /* WidgetColors.swift */,
+				B1A1D7EEB125B75503487BB7 /* WidgetHeader.swift */,
+				0A016A39705DAEA694F7031E /* WidgetPreviews.swift */,
+			);
+			path = ArqBidWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AD3F202764D8699D272730A /* ArqBid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E8D1021EE57CD386DD607A /* Build configuration list for PBXNativeTarget "ArqBid" */;
+			buildPhases = (
+				25C2E4CDE434BF63E0567FEA /* Sources */,
+				36DC7D567CDB346C8452A9D8 /* Frameworks */,
+				D71C08CF6536724B1243954A /* Embed Foundation Extensions */,
+				33CA19A4329F86EF733837F3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28347A7AD0EFD4AF470F368 /* PBXTargetDependency */,
+				FCFA6A2AAB4F1D2713424E8E /* PBXTargetDependency */,
+			);
+			name = ArqBid;
+			packageProductDependencies = (
+			);
+			productName = ArqBid;
+			productReference = CFCC7445C901F2B9929AF793 /* ArqBid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EB321C65B0794581EC3E264 /* ArqBidWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A00D514C8DF0856E020C973 /* Build configuration list for PBXNativeTarget "ArqBidWidget" */;
+			buildPhases = (
+				7CC9C5609B76E759D3AD40C5 /* Sources */,
+				578E9EBB00A402D81811CE59 /* Frameworks */,
+				53941BC8E1FCFD22D5470463 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC88FECB9C765D83AF877639 /* PBXTargetDependency */,
+			);
+			name = ArqBidWidget;
+			packageProductDependencies = (
+			);
+			productName = ArqBidWidget;
+			productReference = 36DF40DA70BDB9438FB990DE /* ArqBidWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FED78516D661DF5E940525A1 /* ArqBidCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3FD85479CD7229C735F59A /* Build configuration list for PBXNativeTarget "ArqBidCore" */;
+			buildPhases = (
+				C36A598E751F3B2E1801032D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArqBidCore;
+			packageProductDependencies = (
+			);
+			productName = ArqBidCore;
+			productReference = 00B6A2393E26DCD95D8E3DD4 /* ArqBidCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D06AFE2E30EB3EE7E136172A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4AD3F202764D8699D272730A = {
+						ProvisioningStyle = Manual;
+					};
+					7EB321C65B0794581EC3E264 = {
+						ProvisioningStyle = Manual;
+					};
+					FED78516D661DF5E940525A1 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F90CF91A5A089245A4D4114D /* Build configuration list for PBXProject "ArqBid" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B15C69F7ACEF64910F0C18C9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 56C42592790D4EAB05EB279B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED78516D661DF5E940525A1 /* ArqBidCore */,
+				4AD3F202764D8699D272730A /* ArqBid */,
+				7EB321C65B0794581EC3E264 /* ArqBidWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25C2E4CDE434BF63E0567FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C46EEF0027BAE127D79D517 /* ArqBidApp.swift in Sources */,
+				EA62A3C33CD492DCD23CDD7D /* BidPopover.swift in Sources */,
+				AD7C2BA59C270529916B8038 /* BidStore.swift in Sources */,
+				B1D909CB02411038CC0DB418 /* ChangeRow.swift in Sources */,
+				DA1A33EFB5920E469A4A9357 /* ClearWindowBackground.swift in Sources */,
+				B17F717D69168A7A5E9A4B48 /* RateRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC9C5609B76E759D3AD40C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D61ED6AC671FC90C7BD44FE /* ArqBidTimelineProvider.swift in Sources */,
+				017BCFFF426F4605781CA250 /* ArqBidWidget.swift in Sources */,
+				5B335E5AF39CFB5AE78E49AA /* ArqBidWidgetEntry.swift in Sources */,
+				C705EF6A1982F646FF6A029C /* ArqBidWidgetView.swift in Sources */,
+				CA65D95CC8F26DEA1686866A /* MediumQuoteView.swift in Sources */,
+				698BFF98834ABC602A96351E /* SmallQuoteView.swift in Sources */,
+				9CB35E07E1025381302A7B52 /* TrendPanel.swift in Sources */,
+				7346A878F8437394A793D03B /* WidgetCardBackground.swift in Sources */,
+				8534515944E152A5C4109B92 /* WidgetChangeRow.swift in Sources */,
+				FD4B03E5DD7BC2196E2D206B /* WidgetColors.swift in Sources */,
+				D8D3C4D9CD1FEA20103C1E40 /* WidgetHeader.swift in Sources */,
+				3310C1DD331DCBAFD8D08B60 /* WidgetPreviews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36A598E751F3B2E1801032D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABB02FE409A0BA990C0E18D /* APIError.swift in Sources */,
+				3E461F10CB54505088919EC3 /* ArqFinanceService.swift in Sources */,
+				382AF0AB244048A43AB08973 /* ArqRates.swift in Sources */,
+				5A1B8BEE48A28F9D687A5194 /* ArqTicker.swift in Sources */,
+				B43A032A14791BD068ED4546 /* CurrencyFormatter.swift in Sources */,
+				F2026968CE27B2390C882FFC /* RateHistory.swift in Sources */,
+				AF16A6BF182032C5CA2D7991 /* RateHistoryStore.swift in Sources */,
+				BBF9A884957E56B3CC4A6238 /* RateSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E28347A7AD0EFD4AF470F368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED78516D661DF5E940525A1 /* ArqBidCore */;
+			targetProxy = DA41F04367C3DB95DE0B265D /* PBXContainerItemProxy */;
+		};
+		EC88FECB9C765D83AF877639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED78516D661DF5E940525A1 /* ArqBidCore */;
+			targetProxy = 7D7F1F2021E1DD9ED4F74086 /* PBXContainerItemProxy */;
+		};
+		FCFA6A2AAB4F1D2713424E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EB321C65B0794581EC3E264 /* ArqBidWidget */;
+			targetProxy = EE5B110E015C55F945D3594D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03EA204ECD7E9F65C85333D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		7F8D660A84D175A2EB7ED31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/CoreInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.ArqBidCore;
+				PRODUCT_MODULE_NAME = ArqBidCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		7F90CE298A1B98546A9875D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.arqbid.widget;
+				PRODUCT_NAME = ArqBidWidget;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89ECB5A7B4B93338BDB3CBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		DC471DF3C963409521F1BF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LSUIElement = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.arqbid;
+				PRODUCT_NAME = ArqBid;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF0D5A4074C92F7CC95F58A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/CoreInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.ArqBidCore;
+				PRODUCT_MODULE_NAME = ArqBidCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		DF2796D6666683D4002EB241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LSUIElement = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.arqbid;
+				PRODUCT_NAME = ArqBid;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0C682405C9476CFC48BFAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uciel.arqbid.widget;
+				PRODUCT_NAME = ArqBidWidget;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D3FD85479CD7229C735F59A /* Build configuration list for PBXNativeTarget "ArqBidCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F8D660A84D175A2EB7ED31C /* Debug */,
+				DF0D5A4074C92F7CC95F58A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A00D514C8DF0856E020C973 /* Build configuration list for PBXNativeTarget "ArqBidWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C682405C9476CFC48BFAEC /* Debug */,
+				7F90CE298A1B98546A9875D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8E8D1021EE57CD386DD607A /* Build configuration list for PBXNativeTarget "ArqBid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC471DF3C963409521F1BF04 /* Debug */,
+				DF2796D6666683D4002EB241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F90CF91A5A089245A4D4114D /* Build configuration list for PBXProject "ArqBid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EA204ECD7E9F65C85333D8 /* Debug */,
+				89ECB5A7B4B93338BDB3CBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D06AFE2E30EB3EE7E136172A /* Project object */;
+}
