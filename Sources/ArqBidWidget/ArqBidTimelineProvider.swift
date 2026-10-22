@@ -28,15 +28,24 @@ struct ArqBidTimelineProvider: TimelineProvider {
     private func fetchEntry() async -> ArqBidWidgetEntry {
         do {
             let rates = try await ArqFinanceService().fetchRates()
+            let historyStore = RateHistoryStore()
+            var history = historyStore.load()
+            history.append(RateSnapshot(
+                date: rates.date,
+                usdcARS: rates.usdcARS,
+                eurcARS: rates.eurcARS
+            ))
+            historyStore.save(history)
+
             return ArqBidWidgetEntry(
                 date: .now,
                 usdcARS: rates.usdcARS,
                 eurcARS: rates.eurcARS,
                 updatedAt: rates.date,
                 isStale: false,
-                recordCount: 1,
-                usdcChange: nil,
-                eurcChange: nil
+                recordCount: history.snapshots.count,
+                usdcChange: history.change(for: .usdcARS),
+                eurcChange: history.change(for: .eurcARS)
             )
         } catch {
             return .mock(date: .now, isStale: true)
